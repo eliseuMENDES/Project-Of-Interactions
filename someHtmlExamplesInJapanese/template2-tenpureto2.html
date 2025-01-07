@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title>Multilingual Website</title>
+        <style>
+            .hidden { display: none;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Multilingual  Website</h1>
+            <nav>
+                <button onclick="showLanguage('en')">English</button>
+                <button onclick="showLanguage('ja')">日本語</button>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <p class="en">Welcome to our multilingual website!</p>
+                <p class="ja hidden">私たちの多言語ウェブサイトへようこそ！</p>                
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Multilingual website</p>
+        </footer>
+
+        <script>
+            function showLanguage(lang){
+                document.querySelectorAll('.en, .ja').forEach(el => el.classList.add('hidden'));
+                document.querySelectorAll(`.${lang}`).forEach(el => el.classList.remove('hidden'));
+            }
+        </script>
+    </body>
+</html>
