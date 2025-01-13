@@ -1,4 +1,5 @@
-def welcome_message():
-    return "Hello, Python World!"
-if __name__== "__main__":
-    print(welcome_message())
+def greet(name):
+    return f"Hello, {name}!"
+
+if __name__ == "__main__":
+    print(greet("World"))
