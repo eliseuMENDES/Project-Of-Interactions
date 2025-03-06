@@ -8,6 +8,20 @@ body {
 
 }
 
+.hero {
+    background: url('img/hero-bg.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+
+
 /* Header */
 
 header{

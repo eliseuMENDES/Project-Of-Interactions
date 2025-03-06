@@ -1,3 +1,8 @@
+## Como Executar o Projeto
+1. Clone o repositório:
+   '''bash
+   git clone https://github.com/eliseuMENDES/Project-Of-Interactions.git
+
 # Project of Interactions
 
 Este projeto demonstra interações entre HTML, CSS, JavaScript e Python.
