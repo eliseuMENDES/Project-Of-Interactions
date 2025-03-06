@@ -1,118 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce de Relogios</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            <h1>Relogios Elegantes</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-
-                <li><a href="#catalogo">Catálogo</a></li>
-
-                <li><a href="#contato">Contato</a></li>
-
-            </ul>
-        </nav>
-        <div class="carrinho-icon">
-            <i class="fas fa-shopping-cart"></i>
-
-            <span class="carrinho-contador">0</span>
-        </div>
-    </header>
-    <!-- Section Hero (emphasis)-->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Bem-Vindo à nossa loja de relógios</h2>
-
-            <p>Encontre os melhores relógios para todos os estilos.</p>
-            <a href="catalogo" class="btn">Ver Catálogo</a>
-        </div>
-    </section>
-
-    <!-- Product of Catalog  -->
-    <section id="catalogo" class="catalogo">
-        <h2>Nossos Relógios</h2>
-        <div class="produtos-container">
-            <!-- Product 1 -->
-        <div class="produto">
-            <img src="img/relogiodigital1.png" alt="Relogio modelo Digital 01" alt="Relogio Modelo Digital 01">
-        <h3>Relogio Modelo Digital 01</h3>
-        <p class="preco">R$ 769,99</p>
-        <button class="btn-adicionar" data-id="1">Adicionar ao Carrinho</button>
-    </div>
-    <!-- Product 2 -->
-    <div class="produto">
-        <img src="relogiocronometro.jpg" alt="Relogio modelo Cronometro">
-        <h3>Relogio Modelo Cronometro</h3>
-        <p class="preco">R$ 589,99</p>
-        <button class="btn-adicionar" data-id="2">Adicionar ao Carrinho</button>
-     </div>    
-
-    <!-- More products here is comming -->     
-    </section>
-   
-    <!-- Shopping Cart -->
- <section id="carrinho" class="carrinho">
-    <h2>Carrinho de Compras</h2>
-    <div class="carrinhos-itens">
-        <!-- Itens of cart to go added dynamicle in JavaScript -->
-    </div>
-    <div class="carrinho-total">
-        <p>Total: <span class="total">R$0,00</span></p>
-        <button class="btn-finalizar">Finalizar Compras</button>
-    </div>
-    </section>
-
-    <!-- Formulary of Checkout -->
-     <section id="checkout" class="checkout">
-        <h2>Finalizar Compra</h2>
-        <form id="form-checkout">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="endereco">Endereço:</label>
-            <input type="text" id="endereco" name="endereco" required>
-
-            <label for="pagamento">Método de Pagamento:</label>
-            <select id="pagamento" name="pagamento" required>
-
-                <option value="cartao">Cartão de Crédito</option>
-                <option value="Boleto">Boleto</option>
-                <option value="pix">PIX</option>
-
-            </select>
-
-            <button type="subimt" class="btn">Confirmar Compra</button>
-            
-        </form>
-     </section>
-    
-     <!-- Footer -->
-      <footer>
-        <p>&copy; 2025 Relogios Elegantes. Todos os direitos reservados.</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitte"></i></a>
-        </div>
-      </footer>
-    
-    <!-- Scripts -->
-     <script src="scripts.js"></script>
-    
-        
-</body>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Integração com Python</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="container">
+            <section class="input-area">
+                <label for="user-input">Digite algo:</label>
+                <input type="text" id="user-input" placeholder="Sua entrada">
+                <button id="send-button">Enviar</button>
+            </section>
+            <section class="output-area">
+                <div id="result"></div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html>
